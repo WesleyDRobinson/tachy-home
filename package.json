@@ -1,0 +1,30 @@
+{
+  "name": "wdr-portfolio",
+  "version": "2.0.0",
+  "description": "new portfolio stylin",
+  "main": "index.js",
+  "repository": "https://www.github.com/wesleydrobinson/tachy-home",
+  "homepage": "https://www.wesley.tech",
+  "author": "wesley",
+  "license": "MIT",
+  "now": {
+    "public": false,
+    "alias": "wesley.tech"
+  },
+  "scripts": {
+    "build": "browserify main.js -o public/bundle.js -v",
+    "deploy": "now public",
+    "dev": "watchify main.js -o public/bundle.js -v",
+    "start": "http-server"
+  },
+  "devDependencies": {
+    "browserify": "^14.4.0",
+    "watchify": "^3.9.0",
+    "webpack": "^3.7.1"
+  },
+  "dependencies": {
+    "browserify": "^14.4.0",
+    "http-server": "^0.10.0",
+    "lodash": "^4.17.4"
+  }
+}
