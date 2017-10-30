@@ -73,6 +73,7 @@ const resumeButton = document.getElementById('resume-link')
 resumeButton.addEventListener('click', () => {
     const frame = document.getElementById('resume-img')
     frame.classList.toggle('dn')
+    frame.classList.toggle('db')
 
     ga('send', 'event', 'Resume link', 'toggled')
 })
