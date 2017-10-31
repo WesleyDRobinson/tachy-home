@@ -2,8 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>wesley | artist | web developer | human</title>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>wesley | artist | web developer | human</title>
     <meta name="description" content="a demo of wesley robinson's web development; some fun!">
     <link rel="icon" href="images/assets/favicon.ico">
 
@@ -12,70 +14,83 @@
           href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="bundle.css">
 </head>
-<body class="sans-serif near-white bg-near-black">
+<body class="avenir near-white bg-near-black">
 
 <!-- main nav -->
 <section id="main-page" class="cf vh-100 tc ttu f3">
-    <div class="dim dt fl w-100 w-50-l h-50 bg-light-red">
+    <a href="#learning-box" class="link near-white dim dt fl w-100 w-50-l h-50 bg-light-red">
         <div class="dtc v-mid">
             <span class="clip">learning</span>
             <img class="h4" src="images/assets/power.png" alt="power icon">
         </div>
-    </div>
-    <div class="dim dt fl w-100 w-50-ns h-50 bg-light-blue cover bg-left"
-         style="background:url(images/assets/art-photography.jpeg)">
-        <p class="dtc v-mid fw7 strike">art & photography</p>
-    </div>
-    <div class="dim dt fl w-100 w-50-ns h-50 bg-light-yellow cover bg-left"
-         style="background:url(images/assets/music.jpeg);">
-        <p class="dtc v-mid fw4">music</p>
-    </div>
-    <div class="dim dt fl w-100 w-50-l h-50 bg-light-green cover bg-left"
-         style="background:url(images/assets/coding.jpeg);">
+    </a>
+    <a href="#ap-box" class="link near-white dim dt fl w-100 w-50-ns h-50 bg-light-blue cover"
+       style="background:url(images/assets/art-photography.jpeg)">
+        <p class="dtc v-mid fw5">art & photography</p>
+    </a>
+    <a href="#music-box" class="link near-white dim dt fl w-100 w-50-ns h-50 bg-light-yellow cover"
+       style="background:url(images/assets/music.jpeg);">
+        <p class="dtc v-mid fw5">music</p>
+    </a>
+    <a href="#coding-box" class="link near-white dim dt fl w-100 w-50-l h-50 bg-light-green cover"
+       style="background:url(images/assets/coding.jpeg);">
         <p class="dtc v-mid courier f2 fw7">code</p>
-    </div>
+    </a>
 </section>
 
 <!-- offscreen to start-->
-<section id="learning-box" class="fixed vh-100 w-100 near-black bg-near-white overflow-scroll">
-    <main class="pa3 pa5-ns">
-        <p class="f5 lh-copy measure">
-            <a class="f4 fw6 db ttu blue no-underline underline-hover" href="https://platform.html5.org/">The Web
-                Platform</a>
-            I get excited by great design and
-            I like to create beautiful spaces with HTML/ CSS/ JavaScript.
+<section id="learning-box" class="fixed vh-100 w-100 near-white bg-dark-gray overflow-scroll">
+    <main class="avenir pa3 pa4-ns">
+        <h1 class="athelas tracked fw7">What Powers Wesley?</h1>
+        <p class="fw2 lh-copy measure">
+            The pursuit of learning, playtime, exploring.<br>
+            Music and nature and conversation.<br>
+            Coffee and artistic expression.
         </p>
-        <p class="f5 lh-copy measure">
-            If you need a web engineer to build things with a team or offer support for a platform or SDK,
-            <a class="link gold hover-dark-gray bg-gray"
+        <div class="pa3">
+            <blockquote class="athelas ml0 mt0 pl4 light-gray bl bw2 b--blue">
+                <p class="f5 f4-m f3-l lh-copy measure mt0">
+                    "The effects of technology do not occur at the level of opinions or concepts, but alter sense ratios
+                    or patterns of perception steadily and without any resistance."
+                </p>
+                <cite class="f6 ttu tracked fs-normal"><a class="link near-white hover-orange"
+                                                          href="https://en.wikipedia.org/wiki/Marshall_McLuhan">―Marshall
+                    McCluhan</a></cite>
+            </blockquote>
+        </div>
+        <p class="fw2 lh-copy measure">
+            <a class="db athelas mb2 f4 ttu link near-white hover-blue" href="https://platform.html5.org/">The Web
+                Platform</a>
+            pre Y@K through post-college, I hobbied in HTML.
+            Around 2011, I started building websites with HTML5, CSS3, jQuery.
+            In 2015, I <a class="link light-blue hover-orange" href="https://www.fullstackacademy.com">learned
+            JavaScript</a>; now building and
+            deploying fullstack web apps.
+        </p>
+        <p class="fw2 lh-copy measure">
+            I'm interested in starting a team, joining in the construction of an existing product or offering support
+            for an established platform or SDK,
+            <a class="link light-blue hover-orange"
                href="mailto:robinsonwesleyd@gmail.com?subject=Web%20Development&body=Hi Wesley! Let's talk about the web.">
                 let's chat
-            </a>.
+            </a>
         </p>
-        <p class="f5 lh-copy measure">
-            Helping people understand and implement
-            <a class="b link green hover-navy hover-bg-green" href="https://www.segment.com">Segment Analytics</a>
-            has been my full time gig the past couple of years.
-            Debugging iOS (C++ & Swift), Android (Java), JavaScript (web + node.js), Go, .NET, PHP
-            Debugging SQL Data Warehouses
-        </p>
-        <a id="resume-link" class="db f4 fw6 ttu dark-red no-underline underline-hover" href="#">see my one page
-            resume</a>
+        <a id="resume-link" class="dib f4 fw2 ttu light-blue hover-orange" href="#">see my one page resume</a>
         <img id="resume-img" class="dn w-100 w-two-thirds-m w-50-l pt2" src="images/assets/resume.png"
              alt="single page resume">
-        <p class="f5 lh-copy measure">
+        <p class="fw2 lh-copy measure">
             Living in San Francisco since 2015
         </p>
     </main>
 </section>
-<section id="ap-box" class="fixed vh-100 w-100 bg-white-90 overflow-scroll">
+<section id="ap-box" class="fixed vh-100 w-100 navy bg-white-90 overflow-scroll">
     <div id="colorful-box" class="w-80 center">
-        <article>
-            <div class="aspect-ratio aspect-ratio--16x9 mb4">
-                <div id="colorful-key" class="aspect-ratio--object cover"
-                     style="background:url(images/colorful/roses.jpeg) center;"></div>
-            </div>
-        </article>
+        <h1 class="dib f1 fw2">Spectra</h1>
+        <h2 class="dib f2 fw1">colorful photos from unsplash</h2>
+        <div class="aspect-ratio aspect-ratio--16x9 mb4">
+            <div id="colorful-key" class="aspect-ratio--object cover"
+                 style="background:url(images/colorful/roses.jpeg) center;"></div>
+        </div>
         <div id="colorful-thumbs" class="cf">
             <div class="fl w-50 w-third-m w-20-l ph1 mb2 ">
                 <div class="aspect-ratio aspect-ratio--16x9">
@@ -116,105 +131,126 @@
     </div>
 </section>
 <section id="coding-box" class="fixed vh-100 w-100 bg-dark-gray overflow-scroll">
-    <h2 class="ml2 pa2 ttc courier">coding</h2>
-    <p class="ml2 pa2 f3 fw2 lh-copy ttc">
-        <a class="link light-blue bg-animate hover-bg-light-blue hover-dark-gray"
-           href="https://github.com/wesleydrobinson">find me on github</a>
-    </p>
-    <p class="f3 fw2 lh-copy measure measure-wide-ns pre">
-        I enjoy the web platform!
-        HTML, JavaScript, and CSS
-        DOM, Web APIs, JSON, and truly in love with <a class="link orange"
-                                                       href="http://tachyons.io">tachyons.io</a> CSS
-        Web Componenents are great (vanilla JS or Polymer)!
-        React & Vue are fine.
-    </p>
-    <p class="f5 fw2 lh-copy measure measure-wide-ns pre">
-        node.js, Express, ES6 modules, and lodash
-        Webpack, Gulp, Rollup, and other build tools.
-        AWS, Google Cloud + Firebase, zeit.co, Heroku, Up tooling
-        Analytics tools: especially Segment, Google Analytics, Mixpanel
-        SQL databases: Redshift, Postgres, BigQuery
-    </p>
-    <h2 class="mt4 ml2 pa2 ttc courier">projects</h2>
-    <article class="mw8 pa4 mh4 mb3">
-        <a class="link" href="https://photos.wesley.tech">
-            <h3 class="f4 tracked ttu orange">
-                photo vision
-            </h3>
-        </a>
-        <p class="measure serif">In Spring 2017, successfully leveraged the the Google Vision API to obtain facial
-            sentiment. In Fall 2017, added a simple UI, OCR functionality, and deployed</p>
-        <p class="measure serif">Next steps are to put it behind a pay wall as Google Vision is a pay per submission
-            API</p>
-        <a class="dib mb2 pa2 ttu link near-black bg-near-white hover-near-white hover-bg-near-black"
-           href="https://github.com/wesleydrobinson/photoAnalysis">github</a>
-        <div class="aspect-ratio aspect-ratio--16x9">
-            <iframe class="aspect-ratio--object cover" title="photoVision"
-                    src="https://photos.wesley.tech/"></iframe>
-        </div>
-    </article>
+    <div class="ma3">
+        <h1 class="courier">
+            coding
+            <a class="f4 fw2 link light-blue hover-orange"
+               href="https://github.com/wesleydrobinson">on github</a>
+        </h1>
+        <p class="ml2 f4 fw2 lh-copy measure measure-wide-ns">
+            interested in all things HTML, JavaScript, CSS, browsers, DOM, Web APIs
+            I believe <a class="link light-blue hover-orange" href="https://www.webcomponents.org/introduction">Web
+            Components</a> are the future and am currently writing them with <a class="link light-blue hover-orange"
+                                                                                href="https://viperhtml.js.org/hyper.html">hyperHTML</a>
+        </p>
+        <p class="ml4 lh-copy measure measure-wide-ns">
+            Most recent position, Success Engineer at
+            <a class="ph1 fw4 link green hover-dark-gray hover-bg-green" href="https://www.segment.com">Segment</a>
+            debugging issues in JavaScript environments (web + node.js), iOS (C++ & Swift), Android (Java), Go, .NET,
+            PHP
+            Monitoring, improving and repairing SQL Data Warehouses
+            Zendesk, Github, Slack, JIRA, and a personalized suite of developer tools is how I functioned
+        </p>
+        <h3 class="courier">tools i like</h3>
+        <ul class="list f5 fw2 lh-copy measure measure-wide-ns">
+            <li class="lh-copy pv2 ba bl-0 br-0 bt-0 b--dotted b--white-30"><span class="fw4">javascript</span>:
+                node.js,
+                Express, ES6 modules, and lodash
+            </li>
+            <li class="lh-copy pv2 ba bl-0 br-0 bt-0 b--dotted b--white-30"><span class="fw4">css</span>: tachyons.io,
+                bootstrap, material
+            </li>
+            <li class="lh-copy pv2 ba bl-0 br-0 bt-0 b--dotted b--white-30"><span class="fw4">libs/frameworks</span>:
+                hyperHTML, Polymer, React, Vue.js
+            </li>
+            <li class="lh-copy pv2 ba bl-0 br-0 bt-0 b--dotted b--white-30"><span class="fw4">build tools</span>:
+                Webpack,
+                Gulp + Browserify, Rollup, Babel
+            </li>
+            <li class="lh-copy pv2 ba bl-0 br-0 bt-0 b--dotted b--white-30"><span class="fw4">deploying</span>: zeit.co,
+                Heroku, AWS s3, Google Cloud/ Firebase
+            </li>
+            <li class="lh-copy pv2 ba bl-0 br-0 bt-0 b--dotted b--white-30"><span class="fw4">packaged</span>: next.js,
+                create-react-app, polymer-starter-kit
+            </li>
+            <li class="lh-copy pv2 ba bl-0 br-0 bt-0 b--dotted b--white-30"><span class="fw4">Analytics tools</span>:
+                Segment, Google Analytics, Mixpanel, Intercom
+            </li>
+            <li class="lh-copy pv2 ba bl-0 br-0 bt-0 b--dotted b--white-30"><span class="fw4">databases</span>:
+                <br><span class="ml4 underline">SQL</span> Redshift, Postgres, BigQuery
+                <br><span class="ml4 underline">noSQL</span> AWS s3, Firebase, mongoDB
+            </li>
+            <li class="lh-copy pv2 ba bl-0 br-0 bt-0 b--dotted b--white-30"><span class="fw4">Professional</span>:
+                Slack,
+                Zendesk, Forums
+            </li>
+            <li class="lh-copy pv2 ba bl-0 br-0 bt-0 b--dotted b--white-30"><span class="fw4">Misc</span>: WebStorm,
+                git&nbsp+&nbspgitHub, CloudUp, Dropbox Paper, Alfred 3, .zsh&nbsp+&nbsp.oh-my-zsh, markdown
+            </li>
+        </ul>
 
-    <article class="mw8 pa4 mh4">
-        <a class="link" href="https://segment-amp.firebaseapp.com/">
-            <h3 class="f4 tracked ttu blue">
-                Segment AMP Example
-            </h3>
-        </a>
-        <p class="measure serif">In early 2017, Segment Success team was notified AMP Analytics library examples
-            were "not working."
-            I implemented and deployed both native and AMP sites (each static pages using Firebase Hosting).</p>
-        <p class="measure serif">After completion, all examples are functional and example is live!</p>
-        <a class="dib mb2 pa2 ttu link near-black bg-near-white hover-near-white hover-bg-near-black"
-           href="https://github.com/wesleydrobinson/segment-amp">github</a>
-        <div class="mw6">
-            <div class="aspect-ratio aspect-ratio--9x16">
-                <iframe class="aspect-ratio--object cover" title="Segment AMP"
-                        src="https://segment-amp.firebaseapp.com/?amp=1"></iframe>
+        <h2 class=" courier">projects</h2>
+        <article class="mw8 pa4 mh4 mb3">
+            <a class="link" href="https://photos.wesley.tech">
+                <h3 class="f4 tracked ttu orange">
+                    photo vision
+                </h3>
+            </a>
+            <p class="lh-copy measure">In Spring 2017, successfully leveraged the the Google Vision API to obtain facial
+                sentiment. In Fall 2017, added a simple UI, OCR functionality, and deployed</p>
+            <p class="lh-copy measure">Next steps are to put it behind a pay wall as Google Vision is a pay per submission
+                API</p>
+            <a class="dib mb2 pa2 ttu link near-black bg-near-white hover-near-white hover-bg-near-black"
+               href="https://github.com/wesleydrobinson/photoAnalysis">github</a>
+            <div class="aspect-ratio aspect-ratio--16x9">
+                <iframe class="aspect-ratio--object cover" title="photoVision"
+                        src="https://photos.wesley.tech/"></iframe>
             </div>
-        </div>
-    </article>
+        </article>
 
-    <article class="mw8 pa4 mh4">
-        <a class="link" href="https://dice.wesley.tech">
-            <h3 class="f4 tracked ttu orange">
-                dice for you
-            </h3>
-        </a>
-        <p class="measure serif">In Fall 2016, a few friends started playing Call of Cthulu,
-            a story-telling/ role-playing game in the worlds of HP Lovecraft.
-            We quickly found some venues for web toys and I made a simple vanilla JS dice roller.
-        </p>
-        <p class="measure serif">I discovered <a class="b link dark-gray hover-gray bg-near-white hover-bg-white-90"
-                                                 href="http://tachyons.io">tachyons.io</a>
-            in this project. The simplicity of the project gives me space to play with tachyons.io design concepts
-            and also to experiment with code patterns.
-        </p>
-        <a class="dib mb2 pa2 ttu link near-black bg-near-white hover-near-white hover-bg-near-black"
-           href="https://github.com/wesleydrobinson/dice">github</a>
-        <div class="aspect-ratio aspect-ratio--4x3 mb3">
-            <iframe class="aspect-ratio--object cover" title="dice for you"
-                    src="https://dice.wesley.tech/"></iframe>
-        </div>
-    </article>
+        <article class="mw8 pa4 mh4">
+            <a class="link" href="https://segment-amp.firebaseapp.com/">
+                <h3 class="f4 tracked ttu blue">
+                    Segment AMP Example
+                </h3>
+            </a>
+            <p class="lh-copy measure">In early 2017, Segment Success team was notified AMP Analytics library examples
+                were "not working."
+                I implemented and deployed both native and AMP sites (each static pages using Firebase Hosting).</p>
+            <p class="lh-copy measure">After completion, all examples are functional and example is live!</p>
+            <a class="dib mb2 pa2 ttu link near-black bg-near-white hover-near-white hover-bg-near-black"
+               href="https://github.com/wesleydrobinson/segment-amp">github</a>
+            <div class="mw6">
+                <div class="aspect-ratio aspect-ratio--9x16">
+                    <iframe class="aspect-ratio--object cover" title="Segment AMP"
+                            src="https://segment-amp.firebaseapp.com/?amp=1"></iframe>
+                </div>
+            </div>
+        </article>
 
-    <article class="mw8 pa4 mh4">
-        <a class="link" href="">
-            <h3 class="f4 tracked ttu blue">
-                ⬆️４auction
-            </h3>
-        </a>
-        <p class="measure serif">Game functions are complete, UI coming soon! This game will implement the rules of For
-            Sale</p>
-        <a class="link near-black bg-near-white hover-near-white hover-bg-near-black"
-           href=""></a>
-        <div class="mw6">
-            <!--<div class="aspect-ratio aspect-ratio&#45;&#45;16x9">-->
-            <!--<iframe class="aspect-ratio&#45;&#45;object cover" title="UP FOR AUCTION"-->
-            <!--src="" alt="up 4 auction coming soon"></iframe>-->
-            <!--</div>-->
-        </div>
-    </article>
+        <article class="mw8 pa4 mh4">
+            <a class="link" href="https://dice.wesley.tech">
+                <h3 class="tracked ttu orange">
+                    dice for you
+                </h3>
+            </a>
+            <p class="lh-copy measure">In Fall 2016, a few friends started playing Call of Cthulu,
+                a story-telling/ role-playing game in the worlds of HP Lovecraft.
+                We quickly found some venues for web toys and I made a simple vanilla JS dice roller.
+            </p>
+            <p class="lh-copy measure">I discovered <a class="link dark-gray hover-gray bg-near-white hover-bg-white-90"
+                                                     href="http://tachyons.io">tachyons.io</a>
+                in this project. The simplicity of the project gives me space to play with tachyons.io design concepts
+                and also to experiment with code patterns.
+            </p>
+            <a class="dib mb2 pa2 ttu link near-black bg-near-white hover-near-white hover-bg-near-black"
+               href="https://github.com/wesleydrobinson/dice">github</a>
+            <div class="aspect-ratio aspect-ratio--4x3 mb3">
+                <iframe class="aspect-ratio--object cover" title="dice for you"
+                        src="https://dice.wesley.tech/"></iframe>
+            </div>
+        </article>
+    </div>
 </section>
 
 <!-- close button -->
