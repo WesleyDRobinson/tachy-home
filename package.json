@@ -14,7 +14,7 @@
   "scripts": {
     "build": "webpack",
     "deploy": "now && now alias",
-    "dev": "webpack-dev-server --open",
+    "dev": "webpack-dev-server --open --inline --hot",
     "start": "http-server",
     "watch": "webpack --progress --watch"
   },
