@@ -13,9 +13,9 @@
   },
   "scripts": {
     "build": "webpack",
-    "deploy": "now && now alias",
-    "dev": "webpack-dev-server --open --inline --hot",
-    "start": "http-server",
+    "deploy": "yarn run build && now && now alias",
+    "dev": "webpack-dev-server --hot",
+    "start": "node server.js",
     "watch": "webpack --progress --watch"
   },
   "devDependencies": {
@@ -23,12 +23,19 @@
     "babel-loader": "^7.1.2",
     "babel-preset-env": "^1.6.1",
     "css-loader": "^0.28.7",
+    "extract-loader": "^1.0.1",
     "file-loader": "^1.1.5",
+    "html-loader": "^0.5.1",
     "http-server": "^0.10.0",
     "style-loader": "^0.19.0",
     "watchify": "^3.9.0",
     "webpack": "^3.8.1",
     "webpack-dev-server": "^2.9.3"
   },
-  "dependencies": {}
+  "dependencies": {
+    "express": "^4.16.2",
+    "hyperhtml": "^1.12.5",
+    "hyperhtml-element": "^0.6.0",
+    "path-to-regexp": "^2.1.0"
+  }
 }

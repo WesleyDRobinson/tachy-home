@@ -1,16 +1,21 @@
-const path = require('path');
+'use strict';
+
+const path = require('path')
+const webpack = require('webpack')
 
 module.exports = {
-    entry: {
-        app: './src/main.js',
-        handlers: './src/js/handlers.js'
-    },
+    context: __dirname,
+    entry: './src/index.js',
     devServer: {
-      contentBase: './public'
+        contentBase: './public',
+        historyApiFallback: true
     },
-    devtool: 'inline-source-map',
+    plugins: [
+        new webpack.NamedModulesPlugin()
+    ],
+    devtool: 'eval-source-map',
     output: {
-        filename: '[name].bundle.js',
+        filename: 'main.bundle.js',
         path: path.resolve(__dirname, 'public')
     },
     module: {
@@ -48,4 +53,4 @@ module.exports = {
             }
         ]
     }
-};
+}

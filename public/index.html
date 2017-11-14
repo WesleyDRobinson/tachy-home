@@ -12,295 +12,49 @@
     <link rel="stylesheet" href="https://unpkg.com/tachyons@4.8.1/css/tachyons.min.css"/>
     <link rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
+    <!-- hyperHTML for web components -->
+    <script src="//unpkg.com/hyperhtml@latest/min.js"></script>
+    <script src="//unpkg.com/hyperhtml-element@latest/min.js"></script>
+    <script>window.customElements || document.write('<script src="//cdnjs.cloudflare.com/ajax/libs/document-register-element/1.6.2/document-register-element.js"><' + '/script>')</script>
+
+    <!-- load and register components -->
+    <script src="./js/main-nav.js"></script>
+
+    <script src="./js/close-boxes-button.js"></script>
+
+    <script src="./js/learning-box.js"></script>
+    <script src="./js/ap-box.js"></script>
+    <script src="./js/music-box.js"></script>
+    <script src="./js/coding-box.js"></script>
+
+    <script src="./js/contributions-button.js"></script>
+    <script src="./js/contributions-modal.js"></script>
+
+    <!-- routing -->
+    <!-- wesley's page.js rebuild -->
+    <script src='./js/page.js'></script>
+
+    <!-- enable google analytics -->
+    <!--<script async defer src='https://www.google-analytics.com/analytics.js'></script>-->
 </head>
 <body class="avenir near-white bg-near-black">
 
 <!-- main nav -->
-<section id="main-page" class="cf vh-100 tc ttu f3">
-    <a href="#learning-box" class="link near-white dim dt fl w-100 w-50-l h-50 bg-light-red">
-        <div class="dtc v-mid">
-            <span class="clip">learning</span>
-            <img class="h4" src="images/assets/power.png" alt="power icon">
-        </div>
-    </a>
-    <a href="#ap-box" class="link near-white dim dt fl w-100 w-50-ns h-50 bg-light-blue cover"
-       style="background:url(images/assets/art-photography.jpeg)">
-        <p class="dtc v-mid fw5">art & photography</p>
-    </a>
-    <a href="#music-box" class="link near-white dim dt fl w-100 w-50-ns h-50 bg-light-yellow cover"
-       style="background:url(images/assets/music.jpeg);">
-        <p class="dtc v-mid fw5">music</p>
-    </a>
-    <a href="#coding-box" class="link near-white dim dt fl w-100 w-50-l h-50 bg-light-green cover"
-       style="background:url(images/assets/coding.jpeg);">
-        <p class="dtc v-mid courier f2 fw7">code</p>
-    </a>
-</section>
+<main-nav></main-nav>
 
-<!-- offscreen to start-->
-<section id="learning-box" class="fixed vh-100 w-100 near-white bg-dark-gray overflow-scroll">
-    <main class="avenir pa3 pa4-ns">
-        <h1 class="athelas tracked fw7">What Powers Wesley?</h1>
-        <p class="fw2 lh-copy measure">
-            The pursuit of learning, playtime, exploring.<br>
-            Music and nature and conversation.<br>
-            Coffee and artistic expression.
-        </p>
-        <div class="pa3">
-            <blockquote class="athelas ml0 mt0 pl4 light-gray bl bw2 b--blue">
-                <p class="f5 f4-m f3-l lh-copy measure mt0">
-                    "The effects of technology do not occur at the level of opinions or concepts, but alter sense ratios
-                    or patterns of perception steadily and without any resistance."
-                </p>
-                <cite class="f6 ttu tracked fs-normal"><a class="link near-white hover-orange"
-                                                          href="https://en.wikipedia.org/wiki/Marshall_McLuhan">―Marshall
-                    McCluhan</a></cite>
-            </blockquote>
-        </div>
-        <p class="fw2 lh-copy measure">
-            <a class="db athelas mb2 f4 ttu link near-white hover-blue" href="https://platform.html5.org/">The Web
-                Platform</a>
-            pre Y@K through post-college, I hobbied in HTML.
-            Around 2011, I started building websites with HTML5, CSS3, jQuery.
-            In 2015, I <a class="link light-blue hover-orange" href="https://www.fullstackacademy.com">learned
-            JavaScript</a>; now building and
-            deploying fullstack web apps.
-        </p>
-        <p class="fw2 lh-copy measure">
-            I'm interested in starting a team, joining in the construction of an existing product or offering support
-            for an established platform or SDK,
-            <a class="link light-blue hover-orange"
-               href="mailto:robinsonwesleyd@gmail.com?subject=Web%20Development&body=Hi Wesley! Let's talk about the web.">
-                let's chat
-            </a>
-        </p>
-        <a id="resume-link" class="dib f4 fw2 ttu light-blue hover-orange" href="#">see my one page resume</a>
-        <img id="resume-img" class="dn w-100 w-two-thirds-m w-50-l pt2" src="images/assets/resume.png"
-             alt="single page resume">
-        <p class="fw2 lh-copy measure">
-            Living in San Francisco since 2015
-        </p>
-    </main>
-</section>
-<section id="ap-box" class="fixed vh-100 w-100 navy bg-white-90 overflow-scroll">
-    <div id="colorful-box" class="w-80 center">
-        <h1 class="dib f1 fw2">Spectra</h1>
-        <h2 class="dib f2 fw1">colorful photos from unsplash</h2>
-        <div class="aspect-ratio aspect-ratio--16x9 mb4">
-            <div id="colorful-key" class="aspect-ratio--object cover"
-                 style="background:url(images/colorful/roses.jpeg) center;"></div>
-        </div>
-        <div id="colorful-thumbs" class="cf">
-            <div class="fl w-50 w-third-m w-20-l ph1 mb2 ">
-                <div class="aspect-ratio aspect-ratio--16x9">
-                    <div class="aspect-ratio--object cover"
-                         style="background:url(images/colorful/chalk1.jpeg) center;"></div>
-                </div>
-            </div>
-            <div class="fl w-50 w-third-m w-20-l ph1 mb2 ">
-                <div class="aspect-ratio aspect-ratio--16x9">
-                    <div class="aspect-ratio--object cover"
-                         style="background:url(images/colorful/frames.jpeg) center;"></div>
-                </div>
-            </div>
-            <div class="fl w-50 w-third-m w-20-l ph1 mb2 ">
-                <div class="aspect-ratio aspect-ratio--16x9">
-                    <div class="aspect-ratio--object cover"
-                         style="background:url(images/colorful/surfboards.jpeg) center;"></div>
-                </div>
-            </div>
-            <div class="fl w-50 w-third-m w-20-l ph1 mb2 ">
-                <div class="aspect-ratio aspect-ratio--16x9">
-                    <div class="aspect-ratio--object cover"
-                         style="background:url(images/colorful/tiles.jpeg) center;"></div>
-                </div>
-            </div>
-            <div class="fl w-50 w-third-m w-20-l ph1 mb2 ">
-                <div class="aspect-ratio aspect-ratio--16x9">
-                    <div class="aspect-ratio--object cover"
-                         style="background:url(images/colorful/roses.jpeg) center;"></div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<section id="music-box" class="fixed vh-100 w-100 overflow-scroll">
-    <div class="dt w-100 h-100 bg-gold">
-        <p class="dtc v-mid tc ttu navy">more musical info coming soon</p>
-    </div>
-</section>
-<section id="coding-box" class="fixed vh-100 w-100 bg-dark-gray overflow-scroll">
-    <div class="ma3">
-        <h1 class="courier">
-            coding
-            <a class="f4 fw2 link light-blue hover-orange"
-               href="https://github.com/wesleydrobinson">on github</a>
-        </h1>
-        <p class="ml2 f4 fw2 lh-copy measure measure-wide-ns">
-            interested in all things HTML, JavaScript, CSS, browsers, DOM, Web APIs
-            I believe <a class="link light-blue hover-orange" href="https://www.webcomponents.org/introduction">Web
-            Components</a> are the future and am currently writing them with <a class="link light-blue hover-orange"
-                                                                                href="https://viperhtml.js.org/hyper.html">hyperHTML</a>
-        </p>
-        <p class="ml4 lh-copy measure measure-wide-ns">
-            Most recent position, Success Engineer at
-            <a class="ph1 fw4 link green hover-dark-gray hover-bg-green" href="https://www.segment.com">Segment</a>
-            debugging issues in JavaScript environments (web + node.js), iOS (C++ & Swift), Android (Java), Go, .NET,
-            PHP
-            Monitoring, improving and repairing SQL Data Warehouses
-            Zendesk, Github, Slack, JIRA, and a personalized suite of developer tools is how I functioned
-        </p>
-        <h3 class="courier">tools i like</h3>
-        <ul class="list f5 fw2 lh-copy measure measure-wide-ns">
-            <li class="lh-copy pv2 ba bl-0 br-0 bt-0 b--dotted b--white-30"><span class="fw4">javascript</span>:
-                node.js,
-                Express, ES6 modules, and lodash
-            </li>
-            <li class="lh-copy pv2 ba bl-0 br-0 bt-0 b--dotted b--white-30"><span class="fw4">css</span>: tachyons.io,
-                bootstrap, material
-            </li>
-            <li class="lh-copy pv2 ba bl-0 br-0 bt-0 b--dotted b--white-30"><span class="fw4">libs/frameworks</span>:
-                hyperHTML, Polymer, React, Vue.js
-            </li>
-            <li class="lh-copy pv2 ba bl-0 br-0 bt-0 b--dotted b--white-30"><span class="fw4">build tools</span>:
-                Webpack,
-                Gulp + Browserify, Rollup, Babel
-            </li>
-            <li class="lh-copy pv2 ba bl-0 br-0 bt-0 b--dotted b--white-30"><span class="fw4">deploying</span>: zeit.co,
-                Heroku, AWS s3, Google Cloud/ Firebase
-            </li>
-            <li class="lh-copy pv2 ba bl-0 br-0 bt-0 b--dotted b--white-30"><span class="fw4">packaged</span>: next.js,
-                create-react-app, polymer-starter-kit
-            </li>
-            <li class="lh-copy pv2 ba bl-0 br-0 bt-0 b--dotted b--white-30"><span class="fw4">Analytics tools</span>:
-                Segment, Google Analytics, Mixpanel, Intercom
-            </li>
-            <li class="lh-copy pv2 ba bl-0 br-0 bt-0 b--dotted b--white-30"><span class="fw4">databases</span>:
-                <br><span class="ml4 underline">SQL</span> Redshift, Postgres, BigQuery
-                <br><span class="ml4 underline">noSQL</span> AWS s3, Firebase, mongoDB
-            </li>
-            <li class="lh-copy pv2 ba bl-0 br-0 bt-0 b--dotted b--white-30"><span class="fw4">Professional</span>:
-                Slack,
-                Zendesk, Forums
-            </li>
-            <li class="lh-copy pv2 ba bl-0 br-0 bt-0 b--dotted b--white-30"><span class="fw4">Misc</span>: WebStorm,
-                git&nbsp+&nbspgitHub, CloudUp, Dropbox Paper, Alfred 3, .zsh&nbsp+&nbsp.oh-my-zsh, markdown
-            </li>
-        </ul>
+<close-boxes-button></close-boxes-button>
 
-        <h2 class=" courier">projects</h2>
-        <article class="mw8 pa4 mh4 mb3">
-            <a class="link" href="https://photos.wesley.tech">
-                <h3 class="f4 tracked ttu orange">
-                    photo vision
-                </h3>
-            </a>
-            <p class="lh-copy measure">In Spring 2017, successfully leveraged the the Google Vision API to obtain facial
-                sentiment. In Fall 2017, added a simple UI, OCR functionality, and deployed</p>
-            <p class="lh-copy measure">Next steps are to put it behind a pay wall as Google Vision is a pay per submission
-                API</p>
-            <a class="dib mb2 pa2 ttu link near-black bg-near-white hover-near-white hover-bg-near-black"
-               href="https://github.com/wesleydrobinson/photoAnalysis">github</a>
-            <div class="aspect-ratio aspect-ratio--16x9">
-                <iframe class="aspect-ratio--object cover" title="photoVision"
-                        src="https://photos.wesley.tech/"></iframe>
-            </div>
-        </article>
+<learning-box></learning-box>
+<ap-box></ap-box>
+<music-box></music-box>
+<coding-box></coding-box>
 
-        <article class="mw8 pa4 mh4">
-            <a class="link" href="https://segment-amp.firebaseapp.com/">
-                <h3 class="f4 tracked ttu blue">
-                    Segment AMP Example
-                </h3>
-            </a>
-            <p class="lh-copy measure">In early 2017, Segment Success team was notified AMP Analytics library examples
-                were "not working."
-                I implemented and deployed both native and AMP sites (each static pages using Firebase Hosting).</p>
-            <p class="lh-copy measure">After completion, all examples are functional and example is live!</p>
-            <a class="dib mb2 pa2 ttu link near-black bg-near-white hover-near-white hover-bg-near-black"
-               href="https://github.com/wesleydrobinson/segment-amp">github</a>
-            <div class="mw6">
-                <div class="aspect-ratio aspect-ratio--9x16">
-                    <iframe class="aspect-ratio--object cover" title="Segment AMP"
-                            src="https://segment-amp.firebaseapp.com/?amp=1"></iframe>
-                </div>
-            </div>
-        </article>
-
-        <article class="mw8 pa4 mh4">
-            <a class="link" href="https://dice.wesley.tech">
-                <h3 class="tracked ttu orange">
-                    dice for you
-                </h3>
-            </a>
-            <p class="lh-copy measure">In Fall 2016, a few friends started playing Call of Cthulu,
-                a story-telling/ role-playing game in the worlds of HP Lovecraft.
-                We quickly found some venues for web toys and I made a simple vanilla JS dice roller.
-            </p>
-            <p class="lh-copy measure">I discovered <a class="link dark-gray hover-gray bg-near-white hover-bg-white-90"
-                                                     href="http://tachyons.io">tachyons.io</a>
-                in this project. The simplicity of the project gives me space to play with tachyons.io design concepts
-                and also to experiment with code patterns.
-            </p>
-            <a class="dib mb2 pa2 ttu link near-black bg-near-white hover-near-white hover-bg-near-black"
-               href="https://github.com/wesleydrobinson/dice">github</a>
-            <div class="aspect-ratio aspect-ratio--4x3 mb3">
-                <iframe class="aspect-ratio--object cover" title="dice for you"
-                        src="https://dice.wesley.tech/"></iframe>
-            </div>
-        </article>
-    </div>
-</section>
-
-<!-- close button -->
-<a id="close-X"
-   class="dn animated rollIn bounce fadeOut fixed ba bottom-1 left-1 link dim pointer z-999 f3 br-100 pv2 ph3 near-black bg-near-white"
-   href="#">X</a>
-<!-- contributions modal -->
-<a id="contributions-button"
-   class="animated bounceInRight pulse fixed right-1 bottom-1 f6 link pointer grow br-pill ph3 pv2 gold bg-dark-gray">
-    Contribution Opportunities</a>
-<section id="contributions-modal" class="dn fixed z-999 left-0 top-0 w-100 vh-100 bg-white-90 overflow-scroll">
-    <p class="f4 fw5 tc pa3 pa5-ns orange lh-copy">
-        Would you consider becoming a patron of Wesley?
-    </p>
-    <div class="flex flex-wrap justify-around items-center content-center-ns">
-        <article data-name="donation-method" class="bg-white br3 pa3 ma3 pa4-ns ba b--black-10 shadow-2">
-            <div class="tc">
-                <img src="images/assets/BTC_QR.png" class="h4 w4 dib ba b--black-05 pa2"
-                     title="bitcoinQR">
-                <h1 class="f4 mb2">
-                    Bitcoin QR <span role="img" aria-label="arrow-up">⤴️</span>
-                    address <span role="img" aria-label="arrow-down">⤵️</span>
-                </h1>
-                <div class="f6 fw4 gray mt0">13GJTQKn2cZ4y2bhQoaJ39VYqSbp74WKwS</div>
-            </div>
-        </article>
-        <article data-name="donation-method" class="bg-white br3 pa3 ma3 pa4-ns ba b--black-10 shadow-2">
-            <div class="tc">
-                <img src="images/assets/paypal_img.png" class="h4 w4 dib ba br-100 b--black-05 pa2"
-                     title="paypal_pic">
-                <a class="db f4 pa2 dim dark-green" href="https://www.paypal.me/4wesley/20">Link to Paypal</a>
-            </div>
-        </article>
-        <article data-name="donation-method" class="bg-white br3 pa3 ma3 pa4-ns ba b--black-10 shadow-2">
-            <div class="tc">
-                <img src="images/assets/ETH_QR.png" class="h4 w4 dib ba b--black-05 pa2"
-                     title="etherQR">
-                <h1 class="f4 mb2">
-                    Ethereum QR <span role="img" aria-label="arrow-up">⤴️</span>
-                    address <span role="img" aria-label="arrow-down">⤵️</span>
-                </h1>
-                <div class="f6 fw4 gray mt0">0x02a4A724145129eB600aBA33e6660Ff40d9aBDc9</div>
-            </div>
-        </article>
-    </div>
-</section>
+<contributions-button></contributions-button>
 
 <!-- let there be JavaScript-->
-<script src="app.bundle.js"></script>
+<script src="./main.bundle.js"></script>
 
-<!-- Google Analytics -->
 <script>
     window.ga = window.ga || function () {
         (ga.q = ga.q || []).push(arguments)
@@ -308,8 +62,60 @@
     ga.l = +new Date;
     ga('create', 'UA-68515019-1', 'auto');
     ga('send', 'pageview');
+
+    // routing
+    page('*', transition)
+    page('/', mainNav)
+    page('/:box', openBox)
+    page('*', notfound)
+    page()
+
+    function transition(ctx, next) {
+        if (ctx.init) {
+//            console.log('initializing', ctx)
+
+            // enable deep linking for specific routes
+            const deepLinks = ['learning-box', 'music-box', 'coding-box', 'ap-box']
+            const check = deepLinks.indexOf(ctx.path.slice(1))
+            if (~check) next()
+        } else {
+//            console.log('transitioning', ctx)
+            next()
+        }
+    }
+
+    function mainNav() {
+//        console.log('main')
+
+        let closeThese = ['close-boxes-button', 'learning-box', 'music-box', 'coding-box', 'ap-box']
+        closeThese.forEach(hideEl)
+
+        function hideEl(element) {
+            const el = document.querySelector(element)
+            el.classList.add('dn')
+        }
+    }
+
+    function openBox(ctx) {
+//        console.log('opening', ctx)
+
+        const box = document.querySelector(ctx.params.box)
+        const closeBoxesButton = document.querySelector('close-boxes-button')
+
+        setTimeout(() => {
+            box.classList.remove('dn')
+            box.classList.add('animated', 'zoomIn')
+        }, 400)
+        setTimeout(() => closeBoxesButton.classList.remove('dn'), 800)
+
+        ga('send', 'event', ctx.params.box, 'opened')
+    }
+
+    function notfound() {
+        console.log('not found')
+        hyper`<h1>The requested page cannot be found</h1><a href="/">Head back to the start</a>`
+    }
+
 </script>
-<!--<script async src='https://www.google-analytics.com/analytics.js'></script>-->
-<!-- End Google Analytics -->
 </body>
 </html>
