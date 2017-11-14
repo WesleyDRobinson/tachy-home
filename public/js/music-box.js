@@ -4,7 +4,7 @@ class MusicBox extends HyperHTMLElement {
     }
 
     created() {
-        this.classList = "dn fixed top-0 vh-100 w-100 navy bg-near-white overflow-scroll"
+        this.classList = "dn fixed top-0 left-0 vh-100 w-100 navy bg-near-white overflow-scroll"
         this.style = "transition: all 1s ease-out;"
         this.render()
     }
