@@ -1,0 +1,4 @@
+This is a Brave Payments publisher verification file.
+
+Domain: wesley.tech
+Token: 36dbd685daf5cec348ef2c03133fd8380d52ad731ba58fe831b4b5a4b7f15ea6
