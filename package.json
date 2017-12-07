@@ -13,9 +13,10 @@
   },
   "scripts": {
     "build": "webpack",
-    "deploy": "yarn run build && now && now alias",
+    "deploy": "yarn run build && now",
     "dev": "webpack-dev-server --hot",
     "start": "node server.js",
+    "release": "now alias",
     "watch": "webpack --progress --watch"
   },
   "devDependencies": {
